@@ -1,0 +1,14 @@
+{% extends "LoWebBundle::Layout.html.twig" %}
+{% block body %}
+<h1>选择我的角色</h1>
+<form action="{{ path('role_setting') }}" method="post">
+{% for key, role in default_roles %}
+        <input type="radio" name="role" value="{{ key }}">[{{ role['name'] }}]{{ role['desc'] }}<br>
+{% endfor %}
+        <input type="submit" />
+</form>
+<h1>所有角色</h1>
+{% for key, role in roles %}
+        <input type="radio" name="role" value="{{ key }}">[{{ role['name'] }}]{{ role['desc'] }}<br>
+{% endfor %}
+{% endblock body %}

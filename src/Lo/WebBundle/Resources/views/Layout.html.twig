@@ -1,0 +1,71 @@
+{% block all %}
+<!DOCTYPE html>
+<html>
+{% block head_tag %}
+    <head>
+        {% block head %}
+            {% block head_meta %}
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+                <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+                <meta name="description" content="{% block head_meta_description %}Litter Ones{% endblock head_meta_description %}">
+                <meta name="keywords" content="{% block head_meta_keywords %}Litter Ones{% endblock head_meta_keywords %}">
+                <meta name="viewport" content="width=device-width">
+            {% endblock head_meta %}
+
+            <title>{% block head_title %}Litter Ones{% endblock %}</title>
+
+            <link rel="apple-touch-icon" href="/apple-touch-icon-57x57-precomposed.png"/>
+            <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72-precomposed.png" />
+            <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png" />
+            <link rel="icon" href="{{ asset('/favicon.ico') }}" type="image/ico" />
+
+            {% block head_css %}
+                {% stylesheets
+                '@LoWebBundle/Resources/public/css/bootstrap/bootstrap.min.css'
+                '@LoWebBundle/Resources/public/css/flat-ui/flat-ui.css'
+                '@LoWebBundle/Resources/public/css/custom/global.css'
+                %}
+                <link rel="stylesheet"  href="{{ asset_url }}" >
+                {% endstylesheets %}
+            {% endblock head_css %}
+            {% block head_js %}
+                
+            {% endblock head_js %}
+        {% endblock head %}
+    </head>
+{% endblock head_tag %}
+{% block body_tag %}
+    <body>
+    {%block body%}
+        hi
+    {% endblock body %}
+    {% block body_js %}
+       {% javascripts
+                '@LoWebBundle/Resources/public/js/jquery/jquery-1.9.1.min.js'
+                '@LoWebBundle/Resources/public/js/jquery/jquery-ui-1.10.0.custom.min.js'
+                '@LoWebBundle/Resources/public/js/jquery/jquery.dropkick-1.0.0.js'
+                '@LoWebBundle/Resources/public/js/jquery/jquery.placeholder.js'
+                '@LoWebBundle/Resources/public/js/jquery/jquery.tagsinput.js'
+                '@LoWebBundle/Resources/public/js/flat-ui/custom_checkbox_and_radio.js'
+                '@LoWebBundle/Resources/public/js/flat-ui/custom_radio.js'
+                '@LoWebBundle/Resources/public/js/bootstrap/bootstrap-tooltip.js'
+       %}
+       <script charset="utf-8" src="{{ asset_url }}"></script> 
+       {% endjavascripts %}
+       <!--[if lt IE 8]>
+       {% javascripts
+                '@LoWebBundle/Resources/public/js/flat-ui/icon-font-ie7.js'
+                '@LoWebBundle/Resources/public/js/flat-ui/lte-ie7-24.js'
+       %}
+       <script charset="utf-8" src="{{ asset_url }}"></script> 
+       {% endjavascripts %}
+       <![endif]-->
+    {% endblock body_js %}
+    </body>
+{% endblock body_tag %}
+    
+{% block other_code %}
+    
+{% endblock other_code %}
+</html>
+{% endblock all %}

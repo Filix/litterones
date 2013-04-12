@@ -1,0 +1,12 @@
+services:
+    lo.oauth:
+        class: Lo\UserBundle\Util\OauthService
+        arguments: [@service_container]
+        
+    lo.weibo.oauth:
+        class: Lo\UserBundle\Util\WeiboOauthService
+        arguments: [@router, %weibo_oauth_key%]
+        
+    lo.tqq.oauth:
+        class: Lo\UserBundle\Util\TqqOauthService
+        arguments: [@router, %tqq_oauth_key%]

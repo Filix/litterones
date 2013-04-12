@@ -1,0 +1,24 @@
+.my-container{
+    margin-top: 70px;
+}
+.my-middle-container{
+    padding-left: 20px;
+    border-left: 1px solid #ddd;
+}
+.tabs-left > .nav-tabs.my-sidebar .active > a{
+    border-right: 1px solid #fff;
+    z-index: 9999;
+}
+.mgt20{
+    margin-top: 20px;
+}
+.mgl20{
+    margin-left: 20px;
+}
+.mgr20{
+    margin-right: 20px;
+}
+.mgb20{
+    margin-bottom: 20px;
+}
+

@@ -1,0 +1,102 @@
+/*
+ * navbar
+*/
+.navbar .brand{
+    color: #cff3ec;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 0px 20px 0px 0px;
+}
+.navbar .brand .first{
+
+}
+.nav .navbar-unread{
+    display: block;
+    font-size: 10px;
+    line-height: 16px;
+}
+.navbar .nav ul.account_list{
+    width:60px;
+    left: -20px;
+}
+.navbar .nav > li > ul.account_list:before{
+    left: 35px;
+}
+
+/*
+ * my-container
+*/
+.my-container{
+    margin-top: 80px;
+} 
+
+
+/*
+ * left-user-card
+*/
+.left-user-card{
+    border-radius: 6px;
+    background: url(../../images/user-card-bg2.png) -40px -110px #ecf0f5 no-repeat;
+}
+.left-user-card .user-info{
+   padding: 100px 30px 40px 30px;
+}
+.left-user-card .user-info .user-detail-info{
+    position: relative;
+}
+.left-user-card .user-info .user-detail-info .user-name, 
+.left-user-card .user-info .user-detail-info .user-location,
+.left-user-card .user-info .user-detail-info .user-sex{
+    position: absolute;
+    color: #1ABC9C;
+}
+.left-user-card .user-info .user-detail-info .user-name{
+    top: 25px;
+    left: 110px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #eee;
+}
+.left-user-card .user-info .user-detail-info .user-location{
+    top: 60px;
+    left: 110px;
+    
+}
+.left-user-card .user-info .user-detail-info .user-sex{
+    top: 60px;
+    left: 200px;
+}
+.left-user-card .user-avatar{
+    height: 80px;
+    width: 80px;
+}
+.left-user-card .user-social-info{
+    margin: 30px auto 0 auto;
+}
+.left-user-card .user-social-info a.disabled i{
+    display: block;
+}
+.left-user-card .user-social-info a.disabled i.text{
+    font-size: 12px;
+}
+.left-user-card .user-social-info .btn-toolbar .btn{
+    padding: 10px 12px 9px;
+}
+.left-user-card .user-sign-info{
+    margin-top: 40px;
+    border-top: 1px solid rgb(219, 219, 219);
+    padding-top: 10px;
+    color: rgb(172, 174, 173);
+    
+}
+
+
+
+
+/*
+ * global
+*/
+.clear{
+    clear: both;
+}
+

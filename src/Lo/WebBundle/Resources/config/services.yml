@@ -1,0 +1,5 @@
+## YAML Template.
+services:
+    lo.user.oauth:
+        class: Lo\WebBundle\Util\UserOauthService
+        arguments: [@service_container]
